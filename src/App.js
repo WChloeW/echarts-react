@@ -4,7 +4,7 @@ const Page = () => {
     const option = {
       title: {
         text: '未来一周气温变化',
-        subtext: '纯属虚构'
+        subtext: '测试'
     },
     tooltip: {
         trigger: 'axis'
