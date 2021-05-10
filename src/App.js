@@ -82,6 +82,7 @@ const Page = () => {
         }
     ]
     };
+    
     const instance = useRef(null);
     function clickBtn() {
         const base64 = instance.current.getEchartsInstance().getDataURL();
@@ -91,7 +92,7 @@ const Page = () => {
         newWin.document.write(img.outerHTML);
     }
     return (<>
-      <ReactECharts ref={instance} option={option} style={{ height: 400 }}/>
+      <ReactECharts ref={instance} option={option} style={{ height: 400 }} theme={'light'}/>
       <div>
         <button onClick={clickBtn}>click here to get the DataURL of chart.</button>
       </div>
